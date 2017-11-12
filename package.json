@@ -1,26 +1,30 @@
 {
-  "name": "realtime-express",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SirWilliamIII/the-real-time-express.git"
-  },
-  "author": "Will Carpenter <willcarpenteriii@gmail.com> (https://willcarpenter.site)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SirWilliamIII/the-real-time-express/issues"
-  },
-  "homepage": "https://github.com/SirWilliamIII/the-real-time-express#readme",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2",
-    "gitignore": "^0.6.0",
-    "nodemon": "^1.12.1",
-    "socket.io": "^2.0.4"
-  }
+    "name": "realtime-express",
+    "version": "1.0.0",
+    "description": "realtime chat through a youtube interface",
+    "keywords": [
+        "node", "express", "socket.io", "bcrypt", "jwt", "gulp", "webpack", "babel", "sass"
+    ],
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SirWilliamIII/the-real-time-express.git"
+    },
+    "author": "Will Carpenter <willcarpenteriii@gmail.com> (https://willcarpenter.site)",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/SirWilliamIII/the-real-time-express/issues"
+    },
+    "homepage": "https://github.com/SirWilliamIII/the-real-time-express#readme",
+    "dependencies": {
+        "body-parser": "^1.18.2",
+        "express": "^4.16.2",
+        "gitignore": "^0.6.0",
+        "nodemon": "^1.12.1",
+        "socket.io": "^2.0.4"
+    }
 }
