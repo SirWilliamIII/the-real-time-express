@@ -1,14 +1,14 @@
 html
-	head
-		title=title
-		link(rel="stylesheet", href="https://unpkg.com/tachyons@4.9.0/css/tachyons.min.css")
-		link(rel="stylesheet", href="styles.css")
-	body.helvetica
-		.wrapper
-			.chat-list
-				ul
-			.chat-form
-				input(type="text", placeholder="enter message", class="input-reset ba bg-gray hover-bg-dark-gray hover-white w-100")
-		
-		script(src="/socket.io/socket.io.js")
-		script(src="/application.js")
+    head
+        title=title
+        link(rel="stylesheet", href="https://unpkg.com/tachyons@4.9.0/css/tachyons.min.css")
+        link(rel="stylesheet", href="styles.css")
+    body
+        .wrapper
+            .chat-list
+                ul
+            .chat-form
+                input(type="text", placeholder="enter message", class="input-reset ba bg-gray hover-bg-pink hover-black")
+
+        script(src="/socket.io/socket.io.js")
+        script(src="/application.js")

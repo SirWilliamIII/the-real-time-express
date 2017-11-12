@@ -1,6 +1,6 @@
-const http = require('http'),
-    express = require('express'),
-    socketIo = require('socket.io')
+const http     = require('http'),
+      express  = require('express'),
+      socketIo = require('socket.io')
 
 const router = require('./routes/router.js')
 const app = express()
@@ -10,15 +10,23 @@ app.set('view engine', 'pug');
 app.set('views', __dirname + '/views');
 
 const server = new http.Server(app)
-const io = socketIo(server)
+let io = socketIo(server)
 
 io.on('connection', socket => {
-    console.log('Client is connected');
+	console.log('Client is connected');
+	socket.on("chat:add", data => {
+		console.log(data)
+		io.emit('chat:added', data)
+	})
+
+	socket.on('disconnect', () => {
+		console.log('Socket disconnected')
+	})
 })
 
 app.use(express.static('./public'))
 app.use(router)
 
 server.listen(port, () => {
-    console.log(`Listening on port ${ port }`);
+	console.log(`Listening on port ${ port }`);
 })
